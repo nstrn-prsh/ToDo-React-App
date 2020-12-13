@@ -5,7 +5,7 @@ const AddNewTask = () => {
   const context = useContext(TodoContext);
 
   return (
-    <div className='w-50 mx-auto fixed-bottom mb-5 p-3 wrapper'>
+    <div className='w-50 mx-auto fixed-top p-3 wrapper' style={{marginTop:'130px'}}>
       <form
         className='form-inline justify-content-center'
         onSubmit={(e) => e.preventDefault()}

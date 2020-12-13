@@ -73,6 +73,7 @@
   max-height: 800px;
   overflow: hidden;
   font-family: "Mahboubeh Mehravar" !important;
+  font-size: smaller;
   cursor: pointer;
   direction: rtl;
 }
