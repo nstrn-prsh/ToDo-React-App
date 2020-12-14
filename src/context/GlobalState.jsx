@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import TodoContext from "./todoContext";
 import uuidv4 from "uuid/v4";
+import TodoContext from "./todoContext";
 
 const GlobalState = (props) => {
   const [getTodos, setTodos] = useState([]);

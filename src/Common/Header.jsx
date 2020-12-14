@@ -1,4 +1,4 @@
-import React, { useContext, Fragment } from "react";
+import React, { useContext } from "react";
 import { Alert, Badge } from "react-bootstrap";
 import TodoContext from "./../context/todoContext";
 //9.4
@@ -12,7 +12,7 @@ const Header = () => {
   else badgeStyle = "danger";
 
   return (
-    <Fragment>
+    <div className='rtl text-center'>
       <Alert variant='warning'>
         <h2> لیست کارها ! </h2>
       </Alert>
@@ -25,7 +25,7 @@ const Header = () => {
           میباشد.{" "}
         </h5>
       </Alert>
-    </Fragment>
+    </div>
   );
 };
 

@@ -13,9 +13,7 @@ const TodoButton = () => {
         <div className='col-md-8'>
           <div className='rtl text-center'>
             <Button
-              variant={
-                buttonList ? "light btn-large" : "dark btn-large"
-              }
+              variant={buttonList ? "light btn-large" : "dark btn-large"}
               onClick={showList}
               active
             >
