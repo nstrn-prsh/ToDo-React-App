@@ -3,9 +3,13 @@ import TodoContext from "./../context/todoContext";
 
 const AddNewTask = () => {
   const context = useContext(TodoContext);
+  const { todo, handleTodoInput, handleCreateNewTodo } = context;
 
   return (
-    <div className='w-50 mx-auto fixed-top p-3 wrapper' style={{marginTop:'130px'}}>
+    <div
+      className='w-50 mx-auto fixed-top p-3 wrapper'
+      style={{ marginTop: "130px" }}
+    >
       <form
         className='form-inline justify-content-center'
         onSubmit={(e) => e.preventDefault()}
@@ -15,14 +19,14 @@ const AddNewTask = () => {
             type='text'
             className='form-control rounded'
             placeholder='اضافه کردن کار جدید'
-            value={context.todo}
-            onChange={context.handleTodoInput}
+            value={todo}
+            onChange={handleTodoInput}
           />
           <div className='input-group-prepend'>
             <button
               type='submit'
               className='btn btn-sm bg-transparent fa fa-plus-square text-light'
-              onClick={context.handleCreateNewTodo}
+              onClick={handleCreateNewTodo}
             />
           </div>
         </div>
