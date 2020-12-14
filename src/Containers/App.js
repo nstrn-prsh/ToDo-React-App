@@ -13,7 +13,7 @@ const App = () => {
       <Nav />
       <Switch>
         <Route path='/' exact component={TodoButton} />
-        <Route path='/about' component={About} />
+        <Route path='/about' render={()=>(<About myName='نسترن پورشریف' />)} />
       </Switch>
       <ToastContainer />
     </Fragment>

@@ -8,10 +8,7 @@ const About = ({ myName }) => {
           <div className='card-header'>درباره سازنده</div>
           <div className='card-body'>
             <h5 className='card-title'> پروژه ری اکت </h5>
-            <p className='card-text'>
-              {/* {myName}  */}
-              نسترن پورشریف
-            </p>
+            <p className='card-text'>{myName}</p>
             <a href='google.com' className='btn btn-primary'>
               صفحه گیت هاب
             </a>

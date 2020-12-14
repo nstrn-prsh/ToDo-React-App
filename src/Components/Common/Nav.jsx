@@ -1,6 +1,6 @@
 import React from "react";
 import { Alert } from "react-bootstrap";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter, NavLink } from "react-router-dom";
 
 const Nav = (props) => {
   return (
@@ -8,24 +8,24 @@ const Nav = (props) => {
       <Alert>
         <ul className='nav nav-pills justify-content-center'>
           <li className='nav-item'>
-            <Link
+            <NavLink
               to='/'
-              className={
-                props.location.pathname === "/" ? "ml-3 nav-link bg-dark active" : "ml-3 nav-link"
-              }
+              className='ml-3 nav-link'
+              activeClassName='active'
+              activeStyle={{ color: "white", backgroundColor: "#DC3545" }}
+              exact
             >
               لیست کارها!
-            </Link>
+            </NavLink>
           </li>
           <li className='nav-item'>
-            <Link
+            <NavLink
               to='/about'
-              className={
-                props.location.pathname === "/about" ? "ml-3 nav-link bg-dark active" : "ml-3 nav-link"
-              }
+              className='ml-3 nav-link'
+              activeStyle={{ color: "white", backgroundColor: "#DC3545" }}
             >
               درباره سازنده
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </Alert>
