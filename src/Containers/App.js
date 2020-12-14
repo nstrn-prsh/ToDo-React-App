@@ -1,22 +1,20 @@
 import React, { Fragment } from "react";
 import { ToastContainer } from "react-toastify";
 import { Switch, Route } from "react-router-dom";
-import AddNewTask from "./../Components/AddNewTask";
-import Header from "./../Common/Header";
-import About from "./../Common/About";
-import TodoButton from "./../Components/TodoButton";
+import TodoButton from "./../Components/Tasks/TodoButton";
+import About from "./../Components/Common/About";
+import Nav from "../Components/Common/Nav";
 
 // component tabeii
 
 const App = () => {
   return (
     <Fragment>
-      <Header />
+      <Nav />
       <Switch>
         <Route path='/' exact component={TodoButton} />
         <Route path='/about' component={About} />
       </Switch>
-      <AddNewTask />
       <ToastContainer />
     </Fragment>
   );

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Alert, Badge } from "react-bootstrap";
-import TodoContext from "./../context/todoContext";
+import TodoContext from './../../context/todoContext';
 //9.4
 
 const Header = () => {
@@ -13,9 +13,6 @@ const Header = () => {
 
   return (
     <div className='rtl text-center'>
-      <Alert variant='warning'>
-        <h2> لیست کارها ! </h2>
-      </Alert>
       <Alert>
         <h5 className='alert'>
           تعداد کارها
