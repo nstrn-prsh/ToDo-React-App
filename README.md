@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-* this is my first **react js** project - a complete responsive to-do list *
+*this is my first **react js** project - a complete responsive to-do list*
 
 
 In the project directory, you can run:
